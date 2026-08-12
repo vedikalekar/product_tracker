@@ -42,7 +42,7 @@ class ProductionEntry {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      if (id != null) 'id': id,
       'dailyReportId': dailyReportId,
       'date': date,
       'hour': hour,

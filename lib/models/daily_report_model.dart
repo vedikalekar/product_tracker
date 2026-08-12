@@ -28,7 +28,7 @@ class DailyReport {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      if (id != null) 'id': id,
       'reportNumber': reportNumber,
       'date': date,
       'shift': shift,

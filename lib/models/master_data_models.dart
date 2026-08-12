@@ -25,7 +25,7 @@ class Employee {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      if (id != null) 'id': id,
       'employeeCode': employeeCode,
       'name': name,
       'role': role,
@@ -77,7 +77,7 @@ class ProductionLine {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      if (id != null) 'id': id,
       'lineCode': lineCode,
       'name': name,
       'department': department,
@@ -126,7 +126,7 @@ class ModelItem {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      if (id != null) 'id': id,
       'modelCode': modelCode,
       'name': name,
       'targetRate': targetRate,
@@ -178,7 +178,7 @@ class QualityParameter {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      if (id != null) 'id': id,
       'paramCode': paramCode,
       'name': name,
       'category': category,
